@@ -10,6 +10,32 @@ import AddIcon from '@mui/icons-material/Add'
 import DeleteItemDialog from '../form/DeleteItemDialog'
 import Snackbar from '@mui/material/Snackbar'
 
+const headers = [
+  {
+    key: 'id',
+    header: 'ID',
+  },
+  {
+    key: 'title',
+    header: 'Title',
+  },
+  {
+    key: 'description',
+    header: 'Description',
+  },
+  {
+    key: 'created',
+    header: 'Date Created',
+  },
+  {
+    key: 'updated',
+    header: 'Last Updated',
+  },
+  {
+    key: 'actions',
+    header: 'Actions',
+  },
+]
 PublicationTable.propTypes = {
   publications: PropTypes.array,
 }
