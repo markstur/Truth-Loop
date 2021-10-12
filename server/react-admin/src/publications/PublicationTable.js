@@ -10,34 +10,34 @@ import AddIcon from '@mui/icons-material/Add'
 import DeleteItemDialog from '../form/DeleteItemDialog'
 import Snackbar from '@mui/material/Snackbar'
 
-const headers = [
-  {
-    key: 'id',
-    header: 'ID',
-  },
-  {
-    key: 'title',
-    header: 'Title',
-  },
-  {
-    key: 'description',
-    header: 'Description',
-  },
-  {
-    key: 'created',
-    header: 'Date Created',
-  },
-  {
-    key: 'updated',
-    header: 'Last Updated',
-  },
-  {
-    key: 'actions',
-    header: 'Actions',
-  },
-]
 PublicationTable.propTypes = {
   publications: PropTypes.array,
+}
+const caption = 'The Publications table shows a paginated list of all publications currently available'
+const headCells = [
+  {
+    id: 'id',
+    label: 'ID',
+  },
+  {
+    id: 'title',
+    label: 'Title',
+  },
+  {
+    id: 'description',
+    label: 'Description',
+  },
+  {
+    id: 'created',
+    label: 'Date Created',
+  },
+  {
+    id: 'updated',
+    label: 'Last updated',
+  },
+]
+const renderEmpty = function() {
+  return <div data-testid={'emptyPublications'}>No publications available</div>
 }
 
 const emptyTableCaption = 'No publications available'
